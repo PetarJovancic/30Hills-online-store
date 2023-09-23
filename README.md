@@ -73,3 +73,14 @@ npm run data:import
 # Destroy data
 npm run data:destroy
 ```
+
+### Run Using Docker
+
+There are three separate Docker containers,
+One for hosting the mongodb database, second one for backend service and third for the frontend.
+
+To build and run containers execute:
+
+```
+docker-compose up --build --remove-orphans
+```
