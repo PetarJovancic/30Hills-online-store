@@ -1,9 +1,14 @@
-import React from 'react';
-import { Form, Col, Row } from 'react-bootstrap'; 
-import { useGetCategoriesQuery } from '../slices/categoryApiSlice.js';
+import React from "react";
+import { Form, Col, Row } from "react-bootstrap";
+import { useGetCategoriesQuery } from "../slices/categoryApiSlice.js";
 
-const CategoryFilter = ({ category = '', onCategoryChange, sortBy = 'asc', onSortChange }) => {
-  const { data, isLoading, error } = useGetCategoriesQuery({});
+const CategoryFilter = ({
+  category = "",
+  onCategoryChange,
+  sortBy = "asc",
+  onSortChange,
+}) => {
+  const { data } = useGetCategoriesQuery({});
 
   return (
     <Form>
@@ -20,13 +25,13 @@ const CategoryFilter = ({ category = '', onCategoryChange, sortBy = 'asc', onSor
                 value={category}
               >
                 <option value="">all</option>
-                {data ? (
-                  data.map((item) => (
-                    <option key={item._id} value={item.category}>
-                      {item.category}
-                    </option>
-                  ))
-                ) : null}
+                {data
+                  ? data.map((item) => (
+                      <option key={item._id} value={item.category}>
+                        {item.category}
+                      </option>
+                    ))
+                  : null}
               </Form.Control>
             </Col>
           </Form.Group>
