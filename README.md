@@ -12,8 +12,6 @@
      height="50px"
 /></span>
 &nbsp;&nbsp;&nbsp;
-<img src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-/>&nbsp;&nbsp;&nbsp;
 
 > eCommerce platform built with the MERN stack.
 
@@ -87,3 +85,7 @@ To destroy:
 ```
 docker exec 30hills-online-store_backend_1 npm run data:destroy
 ```
+
+### Notes
+
+This is just a demo app for an online store. The next steps will include adding user registration, JWT tokens, and order and payment services. Currently, products are stored in local storage for easier management. Once users and orders are created, selected products for purchase will be stored in the database for enhanced security and to enable access across different devices.
