@@ -21,8 +21,8 @@
 
 ### Env Variables
 
-Rename the `.env.example` file to `.env` and change appropriate fields
-Set up correct port for `"proxy": "http://localhost:<NODE_LOCAL_PORT>"` in `package.json` if you are not using the default ports
+- Rename the `.env.example` file to `.env` and change appropriate fields
+- Set up correct port for `"proxy": "http://localhost:<NODE_LOCAL_PORT>"` in `package.json` if you are not using the default ports
 
 ### Install Dependencies (frontend & backend)
 
