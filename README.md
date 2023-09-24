@@ -12,8 +12,6 @@
      height="50px"
 /></span>
 &nbsp;&nbsp;&nbsp;
-<img src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-/>&nbsp;&nbsp;&nbsp;
 
 > eCommerce platform built with the MERN stack.
 
