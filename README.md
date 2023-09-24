@@ -36,7 +36,7 @@ npm install
 
 ```
 
-# Run frontend (:3000) & backend (:5050)
+# Run frontend & backend
 npm run dev
 
 # Run backend only
