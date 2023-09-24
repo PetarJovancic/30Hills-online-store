@@ -23,17 +23,7 @@
 
 ### Env Variables
 
-Rename the `.env.example` file to `.env` and add the following
-
-```
-PORT=<port>
-MONGO_URI=<mongodb_uri>
-PAGINATION_LIMIT=<integer>
-NODE_ENV=development
-DATASET_URL=https://30hills.com/api/products.json
-```
-
-Change the PAGINATION_LIMIT to what you want
+Rename the `.env.example` file to `.env` and change appropriate fields
 
 ### Install Dependencies (frontend & backend)
 
@@ -77,7 +67,8 @@ npm run data:destroy
 ### Run Using Docker
 
 There are three separate Docker containers,
-One for hosting the mongodb database, second one for backend service and third for the frontend.
+one for hosting mongodb database, second one for backend service and the third for the frontend.
+Remove MONGO_URI from the .env if you want to access database in the docker container.
 
 To build and run containers execute:
 

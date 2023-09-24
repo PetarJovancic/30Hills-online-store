@@ -18,10 +18,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-var corsOptions = {
-  origin: process.env.CLIENT_ORIGIN_URL || "http://localhost:3000",
-};
-app.use(cors(corsOptions));
+// var corsOptions = {
+//   origin: process.env.CLIENT_ORIGIN_URL || "http://localhost:3000",
+// };
+app.use(cors());
+app.options("*", cors());
 
 app.use("/api/products", productRoutes);
 app.use("/api/category", categoryRoutes);

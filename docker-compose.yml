@@ -33,7 +33,7 @@ services:
     networks:
       - backend
       - frontend
-    command: ["npm", "run", "start"]
+    # command: ["npm", "run", "start"]
 
   frontend:
     depends_on:
