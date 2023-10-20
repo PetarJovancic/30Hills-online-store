@@ -78,13 +78,13 @@ docker-compose up --build --remove-orphans
 To populate database in the container run:
 
 ```
-docker exec 30hills-online-store_backend_1 npm run data:import
+docker exec 30hills-online-store-backend-1 npm run data:import
 ```
 
 To destroy:
 
 ```
-docker exec 30hills-online-store_backend_1 npm run data:destroy
+docker exec 30hills-online-store-backend-1 npm run data:destroy
 ```
 
 ### Notes
